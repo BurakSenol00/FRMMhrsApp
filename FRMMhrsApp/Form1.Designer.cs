@@ -78,7 +78,7 @@
             // 
             lstBolumler.ForeColor = SystemColors.Desktop;
             lstBolumler.FormattingEnabled = true;
-            lstBolumler.Location = new Point(3, 181);
+            lstBolumler.Location = new Point(12, 171);
             lstBolumler.Name = "lstBolumler";
             lstBolumler.Size = new Size(592, 144);
             lstBolumler.TabIndex = 2;
@@ -87,7 +87,7 @@
             // 
             btnSonraki.BackColor = SystemColors.ButtonFace;
             btnSonraki.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 162);
-            btnSonraki.Location = new Point(3, 341);
+            btnSonraki.Location = new Point(8, 321);
             btnSonraki.Name = "btnSonraki";
             btnSonraki.Size = new Size(592, 43);
             btnSonraki.TabIndex = 3;
@@ -136,7 +136,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.GradientInactiveCaption;
-            ClientSize = new Size(612, 392);
+            ClientSize = new Size(612, 372);
             Controls.Add(btnSil);
             Controls.Add(btnGuncelle);
             Controls.Add(btnEkle);
