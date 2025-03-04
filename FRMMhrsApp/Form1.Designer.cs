@@ -76,7 +76,7 @@
             // 
             // lstBolumler
             // 
-            lstBolumler.ForeColor = SystemColors.GradientInactiveCaption;
+            lstBolumler.ForeColor = SystemColors.Desktop;
             lstBolumler.FormattingEnabled = true;
             lstBolumler.Location = new Point(3, 181);
             lstBolumler.Name = "lstBolumler";
@@ -145,6 +145,7 @@
             Controls.Add(label1);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "MHRS";
             ResumeLayout(false);
             PerformLayout();
