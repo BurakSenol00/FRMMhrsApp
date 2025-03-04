@@ -127,6 +127,7 @@
             btnSil.TabIndex = 3;
             btnSil.Text = "Sil";
             btnSil.UseVisualStyleBackColor = false;
+            btnSil.Click += btnSil_Click;
             // 
             // Form1
             // 
