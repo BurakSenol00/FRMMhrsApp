@@ -31,8 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             label1 = new Label();
             label2 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            txtBolumAdi = new TextBox();
+            txtBolumAciklamasi = new TextBox();
             lstBolumler = new ListBox();
             btnGec = new Button();
             btnEkle = new Button();
@@ -60,19 +60,19 @@
             label2.TabIndex = 0;
             label2.Text = "Bölüm Açıklaması";
             // 
-            // textBox1
+            // txtBolumAdi
             // 
-            textBox1.Location = new Point(157, 25);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(438, 27);
-            textBox1.TabIndex = 1;
+            txtBolumAdi.Location = new Point(157, 25);
+            txtBolumAdi.Name = "txtBolumAdi";
+            txtBolumAdi.Size = new Size(438, 27);
+            txtBolumAdi.TabIndex = 1;
             // 
-            // textBox2
+            // txtBolumAciklamasi
             // 
-            textBox2.Location = new Point(157, 71);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(438, 27);
-            textBox2.TabIndex = 1;
+            txtBolumAciklamasi.Location = new Point(157, 71);
+            txtBolumAciklamasi.Name = "txtBolumAciklamasi";
+            txtBolumAciklamasi.Size = new Size(438, 27);
+            txtBolumAciklamasi.TabIndex = 1;
             // 
             // lstBolumler
             // 
@@ -104,6 +104,7 @@
             btnEkle.TabIndex = 3;
             btnEkle.Text = "Ekle";
             btnEkle.UseVisualStyleBackColor = false;
+            btnEkle.Click += btnEkle_Click;
             // 
             // btnGuncelle
             // 
@@ -138,8 +139,8 @@
             Controls.Add(btnEkle);
             Controls.Add(btnGec);
             Controls.Add(lstBolumler);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(txtBolumAciklamasi);
+            Controls.Add(txtBolumAdi);
             Controls.Add(label2);
             Controls.Add(label1);
             Icon = (Icon)resources.GetObject("$this.Icon");
@@ -153,8 +154,8 @@
 
         private Label label1;
         private Label label2;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox txtBolumAdi;
+        private TextBox txtBolumAciklamasi;
         private ListBox lstBolumler;
         private Button btnGec;
         private Button btnEkle;
