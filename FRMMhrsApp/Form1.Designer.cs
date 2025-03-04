@@ -34,7 +34,7 @@
             txtBolumAdi = new TextBox();
             txtBolumAciklamasi = new TextBox();
             lstBolumler = new ListBox();
-            btnGec = new Button();
+            btnSonraki = new Button();
             btnEkle = new Button();
             btnGuncelle = new Button();
             btnSil = new Button();
@@ -83,16 +83,17 @@
             lstBolumler.Size = new Size(592, 144);
             lstBolumler.TabIndex = 2;
             // 
-            // btnGec
+            // btnSonraki
             // 
-            btnGec.BackColor = SystemColors.ButtonFace;
-            btnGec.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 162);
-            btnGec.Location = new Point(3, 341);
-            btnGec.Name = "btnGec";
-            btnGec.Size = new Size(592, 43);
-            btnGec.TabIndex = 3;
-            btnGec.Text = "Sonraki";
-            btnGec.UseVisualStyleBackColor = false;
+            btnSonraki.BackColor = SystemColors.ButtonFace;
+            btnSonraki.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 162);
+            btnSonraki.Location = new Point(3, 341);
+            btnSonraki.Name = "btnSonraki";
+            btnSonraki.Size = new Size(592, 43);
+            btnSonraki.TabIndex = 3;
+            btnSonraki.Text = "Sonraki";
+            btnSonraki.UseVisualStyleBackColor = false;
+            btnSonraki.Click += btnSonraki_Click;
             // 
             // btnEkle
             // 
@@ -116,6 +117,7 @@
             btnGuncelle.TabIndex = 3;
             btnGuncelle.Text = "Güncelle";
             btnGuncelle.UseVisualStyleBackColor = false;
+            btnGuncelle.Click += btnGuncelle_Click;
             // 
             // btnSil
             // 
@@ -138,7 +140,7 @@
             Controls.Add(btnSil);
             Controls.Add(btnGuncelle);
             Controls.Add(btnEkle);
-            Controls.Add(btnGec);
+            Controls.Add(btnSonraki);
             Controls.Add(lstBolumler);
             Controls.Add(txtBolumAciklamasi);
             Controls.Add(txtBolumAdi);
@@ -159,7 +161,7 @@
         private TextBox txtBolumAdi;
         private TextBox txtBolumAciklamasi;
         private ListBox lstBolumler;
-        private Button btnGec;
+        private Button btnSonraki;
         private Button btnEkle;
         private Button btnGuncelle;
         private Button btnSil;
