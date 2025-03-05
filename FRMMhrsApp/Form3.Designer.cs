@@ -36,8 +36,8 @@
             dtpTarih = new DateTimePicker();
             btnTumRandevular = new Button();
             btnRandevuOlustur = new Button();
-            comboBox1 = new ComboBox();
-            listBox1 = new ListBox();
+            cmbDoktor = new ComboBox();
+            lstRandevular = new ListBox();
             txtSikayet = new TextBox();
             SuspendLayout();
             // 
@@ -106,6 +106,7 @@
             btnTumRandevular.TabIndex = 3;
             btnTumRandevular.Text = "Randevuları Görüntüle";
             btnTumRandevular.UseVisualStyleBackColor = false;
+            btnTumRandevular.Click += btnTumRandevular_Click;
             // 
             // btnRandevuOlustur
             // 
@@ -117,22 +118,23 @@
             btnRandevuOlustur.TabIndex = 4;
             btnRandevuOlustur.Text = "Randevu Oluştur";
             btnRandevuOlustur.UseVisualStyleBackColor = false;
+            btnRandevuOlustur.Click += btnRandevuOlustur_Click;
             // 
-            // comboBox1
+            // cmbDoktor
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(117, 63);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(250, 28);
-            comboBox1.TabIndex = 5;
+            cmbDoktor.FormattingEnabled = true;
+            cmbDoktor.Location = new Point(117, 63);
+            cmbDoktor.Name = "cmbDoktor";
+            cmbDoktor.Size = new Size(250, 28);
+            cmbDoktor.TabIndex = 5;
             // 
-            // listBox1
+            // lstRandevular
             // 
-            listBox1.FormattingEnabled = true;
-            listBox1.Location = new Point(12, 303);
-            listBox1.Name = "listBox1";
-            listBox1.Size = new Size(362, 104);
-            listBox1.TabIndex = 6;
+            lstRandevular.FormattingEnabled = true;
+            lstRandevular.Location = new Point(12, 303);
+            lstRandevular.Name = "lstRandevular";
+            lstRandevular.Size = new Size(362, 104);
+            lstRandevular.TabIndex = 6;
             // 
             // txtSikayet
             // 
@@ -148,8 +150,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(255, 255, 192);
             ClientSize = new Size(388, 468);
-            Controls.Add(listBox1);
-            Controls.Add(comboBox1);
+            Controls.Add(lstRandevular);
+            Controls.Add(cmbDoktor);
             Controls.Add(btnRandevuOlustur);
             Controls.Add(btnTumRandevular);
             Controls.Add(dtpTarih);
@@ -176,8 +178,8 @@
         private DateTimePicker dtpTarih;
         private Button btnTumRandevular;
         private Button btnRandevuOlustur;
-        private ComboBox comboBox1;
-        private ListBox listBox1;
+        private ComboBox cmbDoktor;
+        private ListBox lstRandevular;
         private TextBox txtSikayet;
     }
 }
