@@ -47,13 +47,49 @@ namespace FRMMhrsApp
         }
         private void btnSil_Click(object sender, EventArgs e)
         {
-            if(lstDoktorlar.SelectedItem==null)
+            if (lstDoktorlar.SelectedItem == null)
             {
                 MessageBox.Show("Lütfen Seçim Yapınız!", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             lstDoktorlar.Items.Remove(lstDoktorlar.SelectedItem);
             MessageBox.Show("Silindi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void btnGuncelle_Click(object sender, EventArgs e)
+        {
+            if (lstDoktorlar.SelectedItem == null)
+            {
+                MessageBox.Show("Lütfen Seçim Yapınız", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (string.IsNullOrWhiteSpace(txtDoktorAdi.Text))
+            {
+                MessageBox.Show("Doktor Adı Boş Olamaz!", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (txtDoktorAdi.Text.All(char.IsDigit))
+            {
+                MessageBox.Show("Lütfen Sadece Harf Giriniz", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            Doktor doktor = lstDoktorlar.SelectedItem as Doktor;
+            doktor.AdSoyad = txtDoktorAdi.Text;
+            doktor.Telefon = mskTelefon.Text;
+            lstDoktorlar.Items[lstDoktorlar.SelectedIndex] = doktor;
+            Temizle();
+            MessageBox.Show("Güncellendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void btnGec_Click(object sender, EventArgs e)
+        {
+            Doktor[] doktorlar = new Doktor[0];
+            foreach (Doktor item in lstDoktorlar.Items)
+            {
+                Array.Resize(ref doktorlar, doktorlar.Length + 1);
+                doktorlar[doktorlar.Length - 1] = item;
+            }
+
         }
     }
 }
