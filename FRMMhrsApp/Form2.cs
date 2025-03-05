@@ -89,6 +89,8 @@ namespace FRMMhrsApp
                 Array.Resize(ref doktorlar, doktorlar.Length + 1);
                 doktorlar[doktorlar.Length - 1] = item;
             }
+            Form3 form3 = new Form3(doktorlar);
+            form3.Show();
 
         }
     }
