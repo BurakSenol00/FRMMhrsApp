@@ -145,7 +145,7 @@
             btnGec.TabIndex = 6;
             btnGec.Text = "Sonraki";
             btnGec.UseVisualStyleBackColor = true;
-            btnGec.Click += txtGec_Click;
+           
             // 
             // Form2
             // 
