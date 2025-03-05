@@ -80,7 +80,7 @@ namespace FRMMhrsApp
                 Array.Resize(ref bolum, bolum.Length + 1);
                 bolum[bolum.Length - 1] = item;
             }
-            Form2 form2 = new Form2();
+            Form2 form2 = new Form2(bolum);
             form2.Show();
         }
     }
