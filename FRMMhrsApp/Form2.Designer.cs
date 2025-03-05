@@ -39,6 +39,7 @@
             btnGuncelle = new Button();
             btnEkle = new Button();
             btnSil = new Button();
+            btnGec = new Button();
             SuspendLayout();
             // 
             // label1
@@ -104,17 +105,18 @@
             // 
             // btnGuncelle
             // 
-            btnGuncelle.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 162);
+            btnGuncelle.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 162);
             btnGuncelle.Location = new Point(329, 297);
             btnGuncelle.Name = "btnGuncelle";
             btnGuncelle.Size = new Size(131, 45);
             btnGuncelle.TabIndex = 5;
             btnGuncelle.Text = "Güncelle";
             btnGuncelle.UseVisualStyleBackColor = true;
+            btnGuncelle.Click += btnGuncelle_Click;
             // 
             // btnEkle
             // 
-            btnEkle.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 162);
+            btnEkle.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 162);
             btnEkle.Location = new Point(12, 297);
             btnEkle.Name = "btnEkle";
             btnEkle.Size = new Size(131, 45);
@@ -125,7 +127,7 @@
             // 
             // btnSil
             // 
-            btnSil.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 162);
+            btnSil.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 162);
             btnSil.Location = new Point(170, 297);
             btnSil.Name = "btnSil";
             btnSil.Size = new Size(131, 45);
@@ -134,12 +136,24 @@
             btnSil.UseVisualStyleBackColor = true;
             btnSil.Click += btnSil_Click;
             // 
+            // btnGec
+            // 
+            btnGec.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 162);
+            btnGec.Location = new Point(12, 348);
+            btnGec.Name = "btnGec";
+            btnGec.Size = new Size(456, 39);
+            btnGec.TabIndex = 6;
+            btnGec.Text = "Sonraki";
+            btnGec.UseVisualStyleBackColor = true;
+            btnGec.Click += txtGec_Click;
+            // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.GradientInactiveCaption;
-            ClientSize = new Size(480, 354);
+            ClientSize = new Size(480, 391);
+            Controls.Add(btnGec);
             Controls.Add(btnSil);
             Controls.Add(btnEkle);
             Controls.Add(btnGuncelle);
@@ -172,5 +186,6 @@
         private Button btnGuncelle;
         private Button btnEkle;
         private Button btnSil;
+        private Button btnGec;
     }
 }
