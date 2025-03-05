@@ -33,7 +33,7 @@
             label2 = new Label();
             label3 = new Label();
             mskTelefon = new MaskedTextBox();
-            cmbBolum = new ComboBox();
+            cmbeklenenBolum = new ComboBox();
             txtDoktorAdi = new TextBox();
             lstDoktorlar = new ListBox();
             btnGuncelle = new Button();
@@ -79,13 +79,13 @@
             mskTelefon.Size = new Size(357, 27);
             mskTelefon.TabIndex = 1;
             // 
-            // cmbBolum
+            // cmbeklenenBolum
             // 
-            cmbBolum.FormattingEnabled = true;
-            cmbBolum.Location = new Point(103, 76);
-            cmbBolum.Name = "cmbBolum";
-            cmbBolum.Size = new Size(357, 28);
-            cmbBolum.TabIndex = 2;
+            cmbeklenenBolum.FormattingEnabled = true;
+            cmbeklenenBolum.Location = new Point(103, 76);
+            cmbeklenenBolum.Name = "cmbeklenenBolum";
+            cmbeklenenBolum.Size = new Size(357, 28);
+            cmbeklenenBolum.TabIndex = 2;
             // 
             // txtDoktorAdi
             // 
@@ -121,6 +121,7 @@
             btnEkle.TabIndex = 5;
             btnEkle.Text = "Ekle";
             btnEkle.UseVisualStyleBackColor = true;
+            btnEkle.Click += btnEkle_Click;
             // 
             // btnSil
             // 
@@ -143,7 +144,7 @@
             Controls.Add(btnGuncelle);
             Controls.Add(lstDoktorlar);
             Controls.Add(txtDoktorAdi);
-            Controls.Add(cmbBolum);
+            Controls.Add(cmbeklenenBolum);
             Controls.Add(mskTelefon);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -153,6 +154,7 @@
             Name = "Form2";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Doktor";
+            Load += Form2_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -163,7 +165,7 @@
         private Label label2;
         private Label label3;
         private MaskedTextBox mskTelefon;
-        private ComboBox cmbBolum;
+        private ComboBox cmbeklenenBolum;
         private TextBox txtDoktorAdi;
         private ListBox lstDoktorlar;
         private Button btnGuncelle;
