@@ -45,5 +45,15 @@ namespace FRMMhrsApp
         {
             txtDoktorAdi.Text = mskTelefon.Text = cmbeklenenBolum.Text = string.Empty;
         }
+        private void btnSil_Click(object sender, EventArgs e)
+        {
+            if(lstDoktorlar.SelectedItem==null)
+            {
+                MessageBox.Show("Lütfen Seçim Yapınız!", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            lstDoktorlar.Items.Remove(lstDoktorlar.SelectedItem);
+            MessageBox.Show("Silindi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }
