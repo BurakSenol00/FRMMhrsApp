@@ -81,7 +81,7 @@ namespace FRMMhrsApp
             MessageBox.Show("Güncellendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        private void btnGec_Click(object sender, EventArgs e)
+        private void btnGec_Click_1(object sender, EventArgs e)
         {
             Doktor[] doktorlar = new Doktor[0];
             foreach (Doktor item in lstDoktorlar.Items)
@@ -91,7 +91,6 @@ namespace FRMMhrsApp
             }
             Form3 form3 = new Form3(doktorlar);
             form3.Show();
-
         }
     }
 }

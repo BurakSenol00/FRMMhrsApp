@@ -10,5 +10,9 @@ namespace FRMMhrsApp.Models
     {
         public DateTime Tarih { get; set; }
         public Hasta Hasta { get; set; }
+        public override string ToString()
+        {
+            return  Tarih+" "+Hasta;
+        }
     }
 }

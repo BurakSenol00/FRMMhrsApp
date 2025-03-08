@@ -163,6 +163,7 @@
             Controls.Add(label1);
             ForeColor = SystemColors.ControlText;
             Name = "Form3";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form3";
             ResumeLayout(false);
             PerformLayout();

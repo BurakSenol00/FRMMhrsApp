@@ -11,5 +11,9 @@ namespace FRMMhrsApp.Models
         public string AdSoyad { get; set; }
         public string Sikayet { get; set; }
         public Doktor Doktor { get; set; }
+        public override string ToString()
+        {
+            return "Ad Soyad: " + AdSoyad + "Şikayet: " + Sikayet + "Doktor Adı: " + Doktor;
+        }
     }
 }

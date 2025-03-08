@@ -141,11 +141,11 @@
             btnGec.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 162);
             btnGec.Location = new Point(12, 348);
             btnGec.Name = "btnGec";
-            btnGec.Size = new Size(456, 39);
+            btnGec.Size = new Size(448, 37);
             btnGec.TabIndex = 6;
             btnGec.Text = "Sonraki";
             btnGec.UseVisualStyleBackColor = true;
-           
+            btnGec.Click += btnGec_Click_1;
             // 
             // Form2
             // 

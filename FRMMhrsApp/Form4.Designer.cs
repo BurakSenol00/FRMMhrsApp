@@ -28,12 +28,54 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form4";
+            dtpBaslangic = new DateTimePicker();
+            dtpBitis = new DateTimePicker();
+            lvRaporListesi = new ListView();
+            SuspendLayout();
+            // 
+            // dtpBaslangic
+            // 
+            dtpBaslangic.Location = new Point(12, 35);
+            dtpBaslangic.Name = "dtpBaslangic";
+            dtpBaslangic.Size = new Size(250, 27);
+            dtpBaslangic.TabIndex = 0;
+            dtpBaslangic.ValueChanged += dtpBaslangic_ValueChanged;
+            // 
+            // dtpBitis
+            // 
+            dtpBitis.Location = new Point(318, 35);
+            dtpBitis.Name = "dtpBitis";
+            dtpBitis.Size = new Size(250, 27);
+            dtpBitis.TabIndex = 0;
+            dtpBitis.ValueChanged += dtpBitis_ValueChanged;
+            // 
+            // lvRaporListesi
+            // 
+            lvRaporListesi.Location = new Point(12, 83);
+            lvRaporListesi.Name = "lvRaporListesi";
+            lvRaporListesi.Size = new Size(556, 222);
+            lvRaporListesi.TabIndex = 1;
+            lvRaporListesi.UseCompatibleStateImageBehavior = false;
+            // 
+            // Form4
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.GradientInactiveCaption;
+            ClientSize = new Size(586, 322);
+            Controls.Add(lvRaporListesi);
+            Controls.Add(dtpBitis);
+            Controls.Add(dtpBaslangic);
+            Name = "Form4";
+            Text = "Form4";
+            Load += Form4_Load;
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private DateTimePicker dtpBaslangic;
+        private DateTimePicker dtpBitis;
+        private ListView lvRaporListesi;
     }
 }
