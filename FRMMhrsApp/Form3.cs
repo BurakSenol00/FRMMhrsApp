@@ -63,6 +63,8 @@ namespace FRMMhrsApp
             Randevu[] randevu = new Randevu[lstRandevular.Items.Count];
             lstRandevular.Items.CopyTo(randevu, 0);
 
+            Form4 form4 = new Form4(randevu);
+            form4.ShowDialog();
             
         }
     }

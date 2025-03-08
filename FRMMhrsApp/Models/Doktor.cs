@@ -14,7 +14,7 @@ namespace FRMMhrsApp.Models
 
         public override string ToString()
         {
-            return "Doktor Adı: " + AdSoyad + " Bölüm: " + Bolum + "Telefon: " + Telefon + " ";
+            return  AdSoyad + "  " + Bolum + " " +Telefon ;
         }
     }
 }
